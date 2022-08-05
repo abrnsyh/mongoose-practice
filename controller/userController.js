@@ -23,16 +23,7 @@ module.exports = {
 			data: user,
 		});
 	},
-	addUser: async (req, res) => {
-		const data = req.body;
-		user = new UserModel(data);
-		user.save((err) => {
-			if (err) {
-				res.json("error");
-			}
-			res.json("Success adding new user");
-		});
-	},
+	addUser: async (req, res) => {},
 	updateUserByName: async (req, res) => {},
 	deleteUserByID: async (req, res) => {},
 };
